@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'times', Times, serif, Times, serif, Helvetica, sans-serif;
+    background-color: #f4f6f8;
+    color: #000000;
+}
+
+header {
+    background-color: #1e3a5f;
+    padding: 40px 0; /* Espacio azul arriba y abajo */
+    text-align: center;
+}
+
+header h1 {
+    /* IMPORTANTE: El nombre debe ser exacto */
+    font-family: 'Playfair Display', serif; 
+    
+    background-color: white; /* Tu franja blanca */
+    color: #1e3a5f;          /* Letras en azul */
+    margin: 0;
+    padding: 10x 0;         /* Grosor de la franja */
+    width: 100%;
+    display: block;
+    
+    /* Estilo de fuente */
+    font-size: 3.5rem;       /* Tamaño grande */
+    font-weight: 900;
+    letter-spacing: -1px;
+}
+
+header h2 {
+    color: #ffffff;
+    font-family: 'Playfair Display', serif; /* O la fuente que prefieras */
+    margin-top: 15px;
+    font-weight: 400;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;        /* Espacio entre la franja y el menú */
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.contenedor {
+    display: flex;
+    max-width: 1100px;
+    margin: 30px auto;
+    gap: 20px;
+    padding: 0 15px;
+}
+
+main {
+    flex: 3;
+}
+
+article {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+article h3 {
+    color: #000103;
+    margin-bottom: 10px;
+}
+
+article p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+article img {
+    width: 100%;
+    margin: 15px 0;
+    border-radius: 10px;
+}
+
+.destacada {
+    font-size: 18px;
+    border: 2px solid #000000;
+}
+
+.noticias {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px; 
+}
+
+.noticias article {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+
+footer {
+    background-color: #1e3a5f;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+@media (max-width: 768px) {
+    .contenedor {
+        flex-direction: column;
+    }
+}
